@@ -1,2 +1,2 @@
 # Kakao
-this is Kakao website making project
+this is Kakao website making projects
