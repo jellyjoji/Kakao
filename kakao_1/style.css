@@ -1,0 +1,111 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+}
+body{
+    font-family: "pretendard",sans-serif;
+    height: 100vh;
+    background-color: var(--white-color);
+}
+:root{
+    --black-color: #222;
+    --gray1-color: #c4c4c4;
+    --gray2-color: #888888;
+    --gray3-color: #555555;
+    --white-color: #fff;
+    --shadow-color: ;
+}
+/* this is dark_mode for js */
+.dark_mode{
+    --black-color: #fff;
+    --gray1-color: #555555;
+    --gray2-color: #888888;
+    --gray3-color: #c4c4c4;
+    --white-color: #222;
+}
+
+/* this is header */
+header{
+    height: 72px;
+    /* padding: 0 120px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    height: 24px;
+    width: 75px;
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image : url(https://w.namu.la/s/5ad27a7225a31af211e61384473afc5f1ac19f14144380fdebc5c61bb4a3373728334b0f1e68f502aeb6254e3ac30f351efeae84c31345ec2d646d81d7373281970401a7bf343444558aa47f45c6535d);
+}
+
+/*  메뉴 색상 진하기 연하기
+    ul li a { color: 진하게 }
+    ul:hover li a { color: 연하게 }
+    ul:hover li a:hover { color: 진하게 } */
+
+.menu_lists{
+    display: flex;
+    gap: 3rem;
+}
+.menu_lists:hover h4 a{
+    color: var(--gray1-color);
+}
+.menu_lists:hover h4 a:hover{
+    color: var(--black-color);
+}
+h4{
+    font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+/* this is menu_icons */
+.menu_icons{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+.menu_icons_icon{
+    height: 24px;
+    width: 24px;
+}
+#search{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z'/%3E%3C/svg%3E");
+}
+#language{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-2.29-2.333A17.9 17.9 0 0 1 8.027 13H4.062a8.008 8.008 0 0 0 5.648 6.667zM10.03 13c.151 2.439.848 4.73 1.97 6.752A15.905 15.905 0 0 0 13.97 13h-3.94zm9.908 0h-3.965a17.9 17.9 0 0 1-1.683 6.667A8.008 8.008 0 0 0 19.938 13zM4.062 11h3.965A17.9 17.9 0 0 1 9.71 4.333 8.008 8.008 0 0 0 4.062 11zm5.969 0h3.938A15.905 15.905 0 0 0 12 4.248 15.905 15.905 0 0 0 10.03 11zm4.259-6.667A17.9 17.9 0 0 1 15.973 11h3.965a8.008 8.008 0 0 0-5.648-6.667z'/%3E%3C/svg%3E");
+}
+#mode{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M10 7a7 7 0 0 0 12 4.9v.1c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2h.1A6.979 6.979 0 0 0 10 7zm-6 5a8 8 0 0 0 15.062 3.762A9 9 0 0 1 8.238 4.938 7.999 7.999 0 0 0 4 12z'/%3E%3C/svg%3E");
+}
+/* this is pc_menu dropdown */
+.pc_menu{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 72px;
+}
+.pc_menu_list{
+    list-style: none;
+    display: none;
+    /* display: flex in JS */
+    flex-direction: row;
+    gap: 1rem;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+    background-color: var(--black-color);
+}
+.pc_menu_list_dropdown{
+    color: var(--white-color);
+
+}
+.pc_menu_list_dropdown a{
+    color: var(--white-color);
+
+}
