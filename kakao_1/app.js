@@ -7,6 +7,8 @@ let pc_menu_list_four = document.querySelector("#four");
 // this is dark mode
 darkMode.addEventListener("click", function() {
     document.body.classList.toggle("dark_mode");
+    // i don't know how to deal w white icon...
+    // darkMode.style.backgroundImage = "url('./sun-line.svg')";
 })
 // this is pc_menu_list
 function pc_menu_click_1() {
@@ -53,3 +55,10 @@ function pc_menu_click_4() {
         pc_menu_list_four.style.display = 'flex';
     }
 }
+// This is closed outside click but should be toggle so i don't know
+// let pc_menu = document.querySelector(".pc_menu");
+
+// document.addEventListener("click", function(event){
+//     if(event.target.closest(".pc_menu"))return;
+//     pc_menu.classList.add("hidden");
+// });
