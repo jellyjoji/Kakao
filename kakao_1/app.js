@@ -56,9 +56,9 @@ function pc_menu_click_4() {
     }
 }
 // This is closed outside click but should be toggle so i don't know
-// let pc_menu = document.querySelector(".pc_menu");
+let pc_menu = document.querySelector(".pc_menu");
 
-// document.addEventListener("click", function(event){
-//     if(event.target.closest(".pc_menu"))return;
-//     pc_menu.classList.add("hidden");
-// });
+document.addEventListener("click", function(event){
+    if(event.target.closest(".pc_menu"))return;
+    pc_menu.classList.add("hidden");
+});
