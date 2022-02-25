@@ -55,10 +55,18 @@ function pc_menu_click_4() {
         pc_menu_list_four.style.display = 'flex';
     }
 }
-// This is closed outside click but should be toggle so i don't know
-let pc_menu = document.querySelector(".pc_menu");
+// This is closed outside click 
+// menu list 는 항상 처음에 뜨지 않도록 css에서 설정하였기에 첫화면에서는 보이지 않는다
+document.addEventListener('click', event=>{
+    //console.log('clicked');
+    const pc_menu = document.querySelector('.pc_menu');
+    // hidden 이 한번 먹히면 hidden 이 계속 먹혀버리기 때문에, 매번 한번 사용후 hidden 을 없애준다는 함수를 넣어 반복시킨다.
+    pc_menu.classList.remove('hidden');
 
-document.addEventListener("click", function(event){
-    if(event.target.closest(".pc_menu"))return;
-    pc_menu.classList.add("hidden");
+    // 최하위 선택자를 호출하여 클릭 영역이 최소로 되도록한다.
+    // closest 의 부모를 안부르고 자기자신을 호출해서 필요가 없는데 바꾸지를 못하고 있네 ? ^^
+    if(event.target.closest('.test')) return;
+    // return 이란 이전까지 작동하고 여기서 중단! 시키는것
+
+    pc_menu.classList.add('hidden');
 });

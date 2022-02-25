@@ -79,6 +79,7 @@ a{
     height: 32px;
     width: 32px;
     background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 .menu_icons_icon:hover{
     background-color : var(--gray1-color);
