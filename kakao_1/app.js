@@ -72,7 +72,11 @@ document.addEventListener('click', event=>{
 });
 
 // this is Mobile_menu_list
-const moreIcon = document.querySelector(".moreIcon");
+const moreIcon_1 = document.querySelector("#moreIcon_1");
+const moreIcon_2 = document.querySelector("#moreIcon_2");
+const moreIcon_3 = document.querySelector("#moreIcon_3");
+const moreIcon_4 = document.querySelector("#moreIcon_4");
+
 let one_mobile = document.querySelector("#one_mobile");
 let two_mobile = document.querySelector("#two_mobile");
 let three_mobile = document.querySelector("#three_mobile");
@@ -80,17 +84,17 @@ let four_mobile = document.querySelector("#four_mobile");
 
 function mobile_menu_click_1() {
     one_mobile.classList.toggle("show_mobile_menu_list");
-    moreIcon.classList.toggle('lessIcon');
+    moreIcon_1.classList.toggle('lessIcon');
 }
 function mobile_menu_click_2() {
     two_mobile.classList.toggle("show_mobile_menu_list");
-    moreIcon.classList.toggle('lessIcon');
+    moreIcon_2.classList.toggle('lessIcon');
 }
 function mobile_menu_click_3() {
     three_mobile.classList.toggle("show_mobile_menu_list");
-    moreIcon.classList.toggle('lessIcon');
+    moreIcon_3.classList.toggle('lessIcon');
 }
 function mobile_menu_click_4() {
    four_mobile.classList.toggle("show_mobile_menu_list");
-   moreIcon.classList.toggle('lessIcon');
+   moreIcon_4.classList.toggle('lessIcon');
 }
