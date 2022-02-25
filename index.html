@@ -14,10 +14,10 @@
             <a href="#"></a>
         </div>
         <div class="menu_lists">
-            <h4><a href="#" onclick="pc_menu_click_1()">카카오</a></h4>
-            <h4><a href="#" onclick="pc_menu_click_2()">뉴스</a></h4>
-            <h4><a href="#" onclick="pc_menu_click_3()">기술과 서비스</a></h4>
-            <h4><a href="#" onclick="pc_menu_click_4()">약속과책임</a></h4>
+            <h4><a href="#" class="test" onclick="pc_menu_click_1()">카카오</a></h4>
+            <h4><a href="#" class="test" onclick="pc_menu_click_2()">뉴스</a></h4>
+            <h4><a href="#" class="test" onclick="pc_menu_click_3()">기술과 서비스</a></h4>
+            <h4><a href="#" class="test" onclick="pc_menu_click_4()">약속과책임</a></h4>
         </div>
         <div class="menu_icons">
             <div class="menu_icons_icon" id="search"></div>
@@ -25,33 +25,107 @@
             <div class="menu_icons_icon" id="mode"></div>
         </div>
     <!-- this is 1920 px PC menu dropdowns -->
-            <div class="pc_menu">
-                <ul class="pc_menu_list" id="one">
-                    <li class="pc_menu_list_dropdown"><a href="#">카카오 문화</a></li>
-                    <li class="pc_menu_list_dropdown"><a href="#">공동체</a></li>
-                    <li class="pc_menu_list_dropdown"><a href="#">히스토리</a></li>
-                </ul>
-                <ul class="pc_menu_list" id="two">
-                    <li class="pc_menu_list_dropdown"><a href="#">조지아</a></li>
-                    <li class="pc_menu_list_dropdown"><a href="#">재키</a></li>
-                </ul>
-                <ul class="pc_menu_list" id="three">
-                    <li class="pc_menu_list_dropdown"><a href="#">기술</a></li>
-                    <li class="pc_menu_list_dropdown"><a href="#">서비스</a></li>
-                </ul>
-                <ul class="pc_menu_list" id="four">
-                    <li class="pc_menu_list_dropdown"><a href="#">ESG</a></li>
-                    <li class="pc_menu_list_dropdown"><a href="#">소셜임팩트</a></li>
-                    <li class="pc_menu_list_dropdown"><a href="#">디지털 권리</a></li>
-                    <li class="pc_menu_list_dropdown"><a href="#">AI윤리</a></li>
-                </ul>
+        <div class="pc_menu">
+            <ul class="pc_menu_list" id="one">
+                <li class="pc_menu_list_dropdown"><a href="#">카카오 문화</a></li>
+                <li class="pc_menu_list_dropdown"><a href="#">공동체</a></li>
+                <li class="pc_menu_list_dropdown"><a href="#">히스토리</a></li>
+            </ul>
+            <ul class="pc_menu_list" id="two">
+                <li class="pc_menu_list_dropdown"><a href="#">조지아</a></li>
+                <li class="pc_menu_list_dropdown"><a href="#">재키</a></li>
+            </ul>
+            <ul class="pc_menu_list" id="three">
+                <li class="pc_menu_list_dropdown"><a href="#">기술</a></li>
+                <li class="pc_menu_list_dropdown"><a href="#">서비스</a></li>
+            </ul>
+            <ul class="pc_menu_list" id="four">
+                <li class="pc_menu_list_dropdown"><a href="#">ESG</a></li>
+                <li class="pc_menu_list_dropdown"><a href="#">소셜임팩트</a></li>
+                <li class="pc_menu_list_dropdown"><a href="#">디지털 권리</a></li>
+                <li class="pc_menu_list_dropdown"><a href="#">AI윤리</a></li>
+            </ul>                                   
         </div>
 
     </header>
-    <!-- this is 360 px mobile menu -->
-    <div class="mobile_menu">
 
+    <!-- this is 360 px mobile menu header-------------------->
+    <div class="header_icons_mobile">
+        <div class="logo" id="logo_mobile">
+            <a href="#"></a>
+        </div>
+        <div class="menu_icons_icon_mobile">
+            <div class="menu_icon_mobile" id="search_mobile"></div>
+            <div class="menu_icon_mobile" id="hamburger"></div>
+        </div>
     </div>
+
+    <!-- this is 360 px mobile menu -->
+    <div class="small_menu">
+        <div class="small_menu_icons">
+            <div class="small_menu_icons_group">
+                <div class="menu_icons_icon" id="mode_mobile"></div>
+                <div class="menu_icons_icon" id="language_mobile"></div>
+            </div>
+            <div class="menu_icons_icon" id="closed"></div>
+        </div>
+    <!-- this is 360 px mobile menu dropdowns -->
+        <div class="small_menu_dropdowns">
+
+            <div class="small_menu_dropdowns_group">
+                <div class="mobile_menu_list_title">
+                    <div class="kakaoIcon" id="kakaoIcon_1" ></div>
+                    <h4><a href="#">카카오</a></h4>
+                    <div class="moreIcon" id="moreIcon_1" onclick="mobile_menu_click_1()"></div>
+                </div>
+                <ul class="mobile_menu_list" id="one_mobile">
+                    <li class="mobile_menu_list_dropdown"><a href="#">카카오 문화</a></li>
+                    <li class="mobile_menu_list_dropdown"><a href="#">공동체</a></li>
+                    <li class="mobile_menu_list_dropdown"><a href="#">히스토리</a></li>
+                </ul>
+            </div>
+            <div class="small_menu_dropdowns_group">
+                <div class="mobile_menu_list_title">
+                    <div class="kakaoIcon" id="kakaoIcon_2" ></div>
+                    <h4><a href="#">뉴스</a></h4>
+                    <div class="moreIcon" id="moreIcon_2" onclick="mobile_menu_click_2()"></div>
+                </div>
+                <ul class="mobile_menu_list" id="two_mobile">
+                    <li class="mobile_menu_list_dropdown"><a href="#">조지아</a></li>
+                    <li class="mobile_menu_list_dropdown"><a href="#">재키</a></li>
+                </ul>
+            </div>
+            
+            <div class="small_menu_dropdowns_group">
+                <div class="mobile_menu_list_title">
+                    <div class="kakaoIcon" id="kakaoIcon_3" ></div>
+                    <h4><a href="#">기술과 서비스</a></h4>
+                    <div class="moreIcon" id="moreIcon_3"onclick="mobile_menu_click_3()"></div>
+                </div>
+                <ul class="mobile_menu_list" id="three_mobile">
+                    <li class="mobile_menu_list_dropdown"><a href="#">기술</a></li>
+                    <li class="mobile_menu_list_dropdown"><a href="#">서비스</a></li>
+                </ul>
+            </div>
+            
+            <div class="small_menu_dropdowns_group">
+                <div class="mobile_menu_list_title">
+                    <div class="kakaoIcon" id="kakaoIcon_4" ></div>
+                    <h4><a href="#">약속과 책임</a></h4>
+                    <div class="moreIcon" id="moreIcon_4" onclick="mobile_menu_click_4()"></div>
+                </div>
+                <ul class="mobile_menu_list" id="four_mobile">
+                    <li class="mobile_menu_list_dropdown"><a href="#">ESG</a></li>
+                    <li class="mobile_menu_list_dropdown"><a href="#">소셜임팩트</a></li>
+                    <li class="mobile_menu_list_dropdown"><a href="#">디지털 권리</a></li>
+                    <li class="mobile_menu_list_dropdown"><a href="#">AI윤리</a></li>
+                </ul>  
+            </div>    
+
+        </div>              
+        
+    </div>
+
     <!-- this is components -->
     <div class="components">
 
