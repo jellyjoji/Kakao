@@ -1,11 +1,41 @@
 const darkMode = document.querySelector("#mode");
+const darkMode_mobile = document.querySelector("#mode_mobile");
 let pc_menu_list_one = document.querySelector("#one");
 let pc_menu_list_two = document.querySelector("#two");
 let pc_menu_list_three = document.querySelector("#three");
 let pc_menu_list_four = document.querySelector("#four");
+const hamburger = document.querySelector('#hamburger');
+let small_menu = document.querySelector('.small_menu');
+let closed = document.querySelector("#closed");
+// window.onresize = function(){ document.location.reload(); };
+
+// if(matchMedia("screen and (max-width: 360px)").matches){ 
+//     console.log("mobile"); 
+// }else if(matchMedia("screen and (max-width: 768px)").matches){ 
+//     console.log("tablet"); 
+// }else if(matchMedia("screen and (min-width: 768px)").matches){ 
+//     console.log("desktop"); 
+//     small_menu.style.display = "none";
+// }
+
+
+// this is mobile hamburger bar button
+function hamburger_click() {
+    small_menu.style.display = "flex";
+}
+function closed_click() {
+    small_menu.style.display = "none";
+}
+// but this is effects to pc size...
 
 // this is dark mode
 darkMode.addEventListener("click", function() {
+    document.body.classList.toggle("dark_mode");
+    // i don't know how to deal w white icon...
+    // darkMode.style.backgroundImage = "url('./sun-line.svg')";
+})
+// this is dark mode_mobile
+darkMode_mobile.addEventListener("click", function() {
     document.body.classList.toggle("dark_mode");
     // i don't know how to deal w white icon...
     // darkMode.style.backgroundImage = "url('./sun-line.svg')";
@@ -85,16 +115,16 @@ let four_mobile = document.querySelector("#four_mobile");
 function mobile_menu_click_1() {
     one_mobile.classList.toggle("show_mobile_menu_list");
     moreIcon_1.classList.toggle('lessIcon');
-}
+};
 function mobile_menu_click_2() {
     two_mobile.classList.toggle("show_mobile_menu_list");
     moreIcon_2.classList.toggle('lessIcon');
-}
+};
 function mobile_menu_click_3() {
     three_mobile.classList.toggle("show_mobile_menu_list");
     moreIcon_3.classList.toggle('lessIcon');
-}
+};
 function mobile_menu_click_4() {
    four_mobile.classList.toggle("show_mobile_menu_list");
    moreIcon_4.classList.toggle('lessIcon');
-}
+};

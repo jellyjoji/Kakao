@@ -39,6 +39,7 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+
 .logo{
     height: 24px;
     width: 75px;
@@ -104,6 +105,7 @@ a{
     position: absolute;
     font-size: 1.2rem;
     top: 72px;
+    display: block;
 }
 .hidden{
     display: none;
@@ -131,12 +133,22 @@ a{
     display: none;
 }
 /* this is controll display none */
-
+.header_icons_mobile{
+display: none;
+}
+.small_menu{
+    display: none;
+}
+.small_menu_dropdowns{
+    display: none;
+}
 /* this is tablet and mobile size!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media screen and (max-width: 768px){
 /* this is controll display none mobile */
-
-/* this is mobile header */
+    .pc_menu{
+        display: none;
+    }
+/* this is 360 px mobile header */
 
     .header_icons_mobile{
         position: absolute;
@@ -148,7 +160,7 @@ a{
         align-items: center;
         width: 100%;
         justify-content: space-evenly;
-        background-color: #f8f8f894;
+        background-color: var(--white-color)
     }
     .menu_icons_icon_mobile{
         display: flex;
@@ -172,12 +184,14 @@ a{
     }
     /* this is 360 px mobile menu header */
     .small_menu{
-        display: flex;
+        display: none;
+        /* this is display none or flex  */
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100wh;
     }
+
     .small_menu_icons{
         position: absolute;
         top: 0;
@@ -214,6 +228,7 @@ a{
         height: 100vh;
         width: 360px;
         padding-bottom: 4rem;
+        display: block;
     }
 
     .mobile_menu_list_title{
@@ -221,9 +236,7 @@ a{
         align-items: center;
         justify-content: space-between;
     }
-    .small_menu_dropdowns_group{
 
-    }
     .small_menu_dropdowns_group h4{
         font-size: 2rem;
         line-height: 6rem;
@@ -261,8 +274,8 @@ a{
         cursor: pointer;
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 16l-6-6h12z'/%3E%3C/svg%3E");    }
     .lessIcon{
-        width: 24px;
-        height: 24px;
+        width: 32px;
+        height: 32px;
         background-repeat: no-repeat;
         background-position: 50% 50%;
         cursor: pointer;
