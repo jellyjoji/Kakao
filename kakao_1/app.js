@@ -18,6 +18,15 @@ let closed = document.querySelector("#closed");
 //     small_menu.style.display = "none";
 // }
 
+// this is shadow 
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("header").className = "header_shadow";
+    } else {
+        document.getElementById("header").className = "header"
+    }
+}
 
 // this is mobile hamburger bar button
 function hamburger_click() {
