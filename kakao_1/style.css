@@ -177,28 +177,28 @@ a{
     font-size: 1.2rem;
     padding-top: 4rem;
 }
-.title{}
-
-.component_2{
-    width: 100%;
+.component_1 img{
+    width: 1.5em;
     height: auto;
+    position: relative;
+    margin-bottom: -14px;
+}
+.component_2{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
-.card_group_1{
+.card_group{
+    width: 100%;
+    height: auto;
     display: flex;
     gap : 2rem;
-    width: 100%;
-    height: auto;
 }
-.card_group_2{
-    width: 100%;
-    display: flex;
-    height: auto;
+.card_1{
 }
-.card_group_3{}
-.card_group_4{}
+.card_2{
+
+}
 .cards{
     width: 288px;
     height: 100%;
@@ -224,9 +224,23 @@ a{
 }
 .card.middle{
     width: 50%;
-    height: auto;
+    height: 360px;
+    display: flex;
+    gap: 2rem;
 }
+/* this is cta button  */
+.cta{
+    border: none;
+    background-color: var(--gray0-color);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 25px;
+}
+a{}
+.cta:hover{ 
+    background-color: var(--gray1-color);
 
+}
 
 /* this is controll display none */
 .header_icons_mobile{
