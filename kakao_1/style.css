@@ -182,6 +182,7 @@ a{
     height: auto;
     position: relative;
     margin-bottom: -14px;
+    z-index: -1;
 }
 .component_2{
     display: flex;
