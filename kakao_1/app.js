@@ -18,13 +18,17 @@ let closed = document.querySelector("#closed");
 //     small_menu.style.display = "none";
 // }
 
-// this is shadow 
+// this is shadow PC & Mobile
 window.onscroll = function() {myFunction()};
 function myFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("header").className = "header_shadow";
+        document.getElementById("header_icons_mobile").className = "header_icons_mobile_shadow";
+
     } else {
-        document.getElementById("header").className = "header"
+        document.getElementById("header").className = "header";
+        document.getElementById("header_icons_mobile").className = "header_icons_mobile";
+
     }
 }
 
@@ -137,3 +141,8 @@ function mobile_menu_click_4() {
    four_mobile.classList.toggle("show_mobile_menu_list");
    moreIcon_4.classList.toggle('lessIcon');
 };
+// this is go back to top button 
+function topFunction() {
+    document.body.scrollTop = 0;// For Safari
+    document.documentElement.scrollTop = 0;// For Chrome, Firefox, IE and Opera
+}
