@@ -176,46 +176,42 @@
     <footer>
         <section class="footer_menu">
             <div class="footer_list">
-                <strong class="footer_title">
-                    <a href="#">
-                        <span>카카오</span>
-                        <span class="moreIcon"></span>
-                    </a>
+                <strong class="footer_title" onclick="footer_menu_1()">
+                    <p>카카오</p>
+                    <div class="dropIcon" id="dropIcon_1"></div>
                 </strong>
-                <ul class="footer_links">
+                <ul class="footer_links" id="footer_links_1">
                     <li><a href="#">카카오 문화</a></li>
                     <li><a href="#">공동체</a></li>
                     <li><a href="#">히스토리</a></li>
                 </ul>
             </div>
             <div class="footer_list">
-                <strong class="footer_title">
-                    <a href="#">
-                        <span>뉴스</span>
-                        <span class="moreIcon"></span>
-                    </a>
+                <strong class="footer_title" onclick="footer_menu_2()">
+                    <p>뉴스</p>
+                    <div class="dropIcon" id="dropIcon_2"></div>
                 </strong>
+                <ul class="footer_links" id="footer_links_2">
+                    <li><a href="#">조지아</a></li>
+                    <li><a href="#">재키</a></li>
+                </ul>
             </div>
             <div class="footer_list">
-                <strong class="footer_title">
-                    <a href="#">
-                        <span>기술과 서비스</span>
-                        <span class="moreIcon"></span>
-                    </a>
+                <strong class="footer_title" onclick="footer_menu_3()">
+                    <p>기술과 서비스</p>
+                    <div class="dropIcon" id="dropIcon_3"></div>
                 </strong>
-                <ul class="footer_links">
+                <ul class="footer_links" id="footer_links_3">
                     <li><a href="#">기술</a></li>
                     <li><a href="#">서비스</a></li>
                 </ul>
             </div>
             <div class="footer_list">
-                <strong class="footer_title">
-                    <a href="#">
-                        <span>약속과 책임</span>
-                        <span class="moreIcon"></span>
-                    </a>
+                <strong class="footer_title" onclick="footer_menu_4()">
+                    <p>약속과 책임</p>
+                    <div class="dropIcon" id="dropIcon_4"></div>
                 </strong>
-                <ul class="footer_links">
+                <ul class="footer_links" id="footer_links_4">
                     <li><a href="#">ESG</a></li>
                     <li><a href="#">소셜임팩트</a></li>
                     <li><a href="#">디지털 권리</a></li>
@@ -224,60 +220,67 @@
             </div>
             <div class="footer_list">
                 <strong class="footer_title">
-                    <a href="#">
-                        <span>인재영입</span>
-                        <span class="goIcon"></span>
-                    </a>
+                    <span>인재영입</span>
+                    <span class="goIcon"></span>
                 </strong>
             </div>
             <div class="footer_list">
                 <strong class="footer_title">
-                    <a href="#">
-                        <span>카카오계정</span>
-                        <span class="goIcon"></span>
-                    </a>
+                    <span>카카오계정</span>
+                    <span class="goIcon"></span>
                 </strong>
             </div>
         </section>
         <!-- this is bottom of footer -->
-        <div class="footer_info">
-            <div class="info_one">
-                <a href="#">이용약관 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"/></svg>
-                </a>
+        <div class="footer_bottom">
+            <div class="footer_info">
+                <div class="info" id="info_one">
+                    <a href="#">이용약관</a>
+                    <div class="downIcon"></div>
+                </div>
+                <div class="info" id="info_two">
+                    <a href="#">위치기반서비스이용약관</a>
+                    <div class="downIcon"></div>    
+                </div>
+                <div class="info" id="info_three">
+                    <a href="#">개인정보처리방침 </a>
+                    <div class="downIcon"></div>                    
+                </div>
+                <div class="info" id="info_four">
+                    <a href="#">운영정책 </a>
+                    <div class="downIcon"></div>                    
+                </div>
+                <div class="info" id="info_one">
+                    <a href="#">이용약관</a>
+                    <div class="downIcon"></div>
+                </div>
+                <div class="info" id="info_two">
+                    <a href="#">Contact Us</a>
+                </div>
             </div>
-            <div class="info_two">
-                <a href="#">위치기반서비스이용약관 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"/></svg>
-                </a>
-            </div>
-            <div class="info_three">
-                <a href="#">개인정보처리방침 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"/></svg>
-                </a>
-            </div>
-            <div class="info_four">
-                <a href="#">운영정책 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"/></svg>
-                </a>
+            <!-- this is footer_search -->
+            <div class="footer_search" onclick="plusIcon()">
+                <strong>관련사이트</strong>
+                <div class="plus_icon"></div>
+                <ul class="search_lists">
+                    <li>
+                        <a href="#">카카오 AI</a>
+                        <div class="moveIcon"></div>
+                    </li>
+                    <li>
+                        <a href="#">카카오 프라이버시</a>
+                        <div class="moveIcon"></div>
+                    </li>
+                    <li>
+                        <a href="#">카카오 디벨로퍼스</a>
+                        <div class="moveIcon"></div>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- this is footer_search -->
-        <div class="footer_search">
-            <strong>관련사이트 <div class="plus_icon"></div></strong>
-            <ul class="search_lists">
-                <li>
-                    <a href="#">카카오 AI
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H7.004V6h11v11h-2V9.414z"/></svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">카카오 프라이버시
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H7.004V6h11v11h-2V9.414z"/></svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">카카오 디벨로퍼스
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"><path fill="none" d="M0 0h24v24H0z"/><path d="M16.004 9.414l-8.607 8.607-1.414-1.414L14.589 8H7.004V6h11v11h-2V9.414z"/></svg>
-                    </a>
-                </li>
-            </ul>
+        <!-- this is license -->
+        <div class="license">
+            <p>© Kakao Corp. All rights reserved.</p>
         </div>
     </footer>
     

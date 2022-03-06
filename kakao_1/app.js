@@ -125,6 +125,26 @@ let two_mobile = document.querySelector("#two_mobile");
 let three_mobile = document.querySelector("#three_mobile");
 let four_mobile = document.querySelector("#four_mobile");
 
+const footer_links_1 = document.querySelector("#footer_links_1");
+const footer_links_2 = document.querySelector("#footer_links_2");
+const footer_links_3 = document.querySelector("#footer_links_3");
+const footer_links_4 = document.querySelector("#footer_links_4");
+
+const search_lists = document.querySelector(".search_lists");
+let plus_icon = document.querySelector('.plus_icon')
+
+let dropIcon_1 = document.querySelector("#dropIcon_1");
+let dropIcon_2 = document.querySelector("#dropIcon_2");
+let dropIcon_3 = document.querySelector("#dropIcon_3");
+let dropIcon_4 = document.querySelector("#dropIcon_4");
+
+
+//this is search_lists in the footer
+function plusIcon() {
+    search_lists.classList.toggle("search_lists_show");
+    plus_icon.classList.toggle("close");
+}
+
 function mobile_menu_click_1() {
     one_mobile.classList.toggle("show_mobile_menu_list");
     moreIcon_1.classList.toggle('lessIcon');
@@ -145,4 +165,21 @@ function mobile_menu_click_4() {
 function topFunction() {
     document.body.scrollTop = 0;// For Safari
     document.documentElement.scrollTop = 0;// For Chrome, Firefox, IE and Opera
+}
+// this is footer_menu toggle 
+function footer_menu_1() {
+    footer_links_1.classList.toggle("show_footer_links");
+    dropIcon_1.classList.toggle('upIcon');
+}
+function footer_menu_2() {
+    footer_links_2.classList.toggle("show_footer_links");
+    dropIcon_2.classList.toggle('upIcon');
+}
+function footer_menu_3() {
+    footer_links_3.classList.toggle("show_footer_links");
+    dropIcon_3.classList.toggle('upIcon');
+}
+function footer_menu_4() {
+    footer_links_4.classList.toggle("show_footer_links");
+    dropIcon_4.classList.toggle('upIcon');
 }
