@@ -7,6 +7,7 @@ let pc_menu_list_four = document.querySelector("#four");
 const hamburger = document.querySelector('#hamburger');
 let small_menu = document.querySelector('.small_menu');
 let closed = document.querySelector("#closed");
+
 // window.onresize = function(){ document.location.reload(); };
 
 // if(matchMedia("screen and (max-width: 360px)").matches){ 
@@ -40,7 +41,6 @@ function closed_click() {
     small_menu.style.display = "none";
 }
 // but this is effects to pc size...
-
 // this is dark mode
 darkMode.addEventListener("click", function() {
     document.body.classList.toggle("dark_mode");
