@@ -10,7 +10,7 @@ html{
     box-sizing: none;
 }
 body{
-    font-family: "pretendard",sans-serif;
+    font-family: "pretendard",sans-serif,arial;
     height: 100vh;
     background-color: var(--white-color);
     display: flex;
@@ -175,6 +175,7 @@ a{
     flex-direction: column;
     gap: 4rem;
     margin-top: 72px;
+
 }
 .component_1{
     font-size: 1.2rem;
@@ -410,13 +411,14 @@ a{}
 display: none;
 }
 .small_menu{
-    display: none;
-
 }
 .small_menu_dropdowns{
     display: none;
-
 }
+.small_menu_icons{
+    display: none;
+}
+
 /* this is tablet and mobile size!!!!!!!!!!!!!!!!!!!!!!!!!! */
 @media screen and (max-width: 768px){
 /* this is controll display none mobile */
@@ -484,6 +486,7 @@ display: none;
         align-items: center;
         width: 100vw; 
         position: fixed;
+        z-index: 2;
     }
 
     .small_menu_icons{
@@ -502,11 +505,6 @@ display: none;
         display: flex;
         gap: 0.5rem;
     }
-    .small_menu_icons{
-        display: flex;
-        gap: 0.5rem;
-
-    }
     #language_mobile{
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-2.29-2.333A17.9 17.9 0 0 1 8.027 13H4.062a8.008 8.008 0 0 0 5.648 6.667zM10.03 13c.151 2.439.848 4.73 1.97 6.752A15.905 15.905 0 0 0 13.97 13h-3.94zm9.908 0h-3.965a17.9 17.9 0 0 1-1.683 6.667A8.008 8.008 0 0 0 19.938 13zM4.062 11h3.965A17.9 17.9 0 0 1 9.71 4.333 8.008 8.008 0 0 0 4.062 11zm5.969 0h3.938A15.905 15.905 0 0 0 12 4.248 15.905 15.905 0 0 0 10.03 11zm4.259-6.667A17.9 17.9 0 0 1 15.973 11h3.965a8.008 8.008 0 0 0-5.648-6.667z'/%3E%3C/svg%3E");
     }
@@ -520,12 +518,15 @@ display: none;
     /* this is mobile menu dropdown */
     .small_menu_dropdowns{
         width: 360px;
+        padding: 0 100%;
         display: block;
         top: 72px;
+        height: 100vh;
         position: absolute;
         background-color: var(--white-color);  
-        padding: 0 100%;
         padding-bottom: 2rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     .mobile_menu_list_title{
@@ -533,7 +534,6 @@ display: none;
         align-items: center;
         justify-content: space-between;
     }
-
     .small_menu_dropdowns_group h4{
         font-size: 2rem;
         line-height: 6rem;
@@ -643,6 +643,7 @@ display: none;
     }
     .footer_search{
         width: auto;
+        /* z-index: -1; */
     }
     
     /* this is component_2 card 360px */
