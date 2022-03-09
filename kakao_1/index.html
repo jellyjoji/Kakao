@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
-    <title>Kakao_1</title>
-</head>
+    
 <body>
     <header id="header">
-    <!-- this is 1920 px PC menu -->
+        <!-- this is 1920 px PC menu -->
         <div class="logo">
             <a href="#"></a>
         </div>
@@ -20,9 +20,15 @@
             <h4><a href="#" class="test" onclick="pc_menu_click_4()">약속과책임</a></h4>
         </div>
         <div class="menu_icons">
-            <div class="menu_icons_icon" id="search"></div>
-            <div class="menu_icons_icon" id="language"></div>
-            <div class="menu_icons_icon" id="mode"></div>
+            <div class="menu_icons_icon" id="search">
+                <i class="fa-regular fa-magnifying-glass"></i>
+            </div>
+            <div class="menu_icons_icon" id="language">
+                <i class="fa-regular fa-earth-americas"></i>
+            </div>
+            <div class="menu_icons_icon" id="mode">
+                <i class="fa-solid fa-moon"></i>
+            </div>
         </div>
     <!-- this is 1920 px PC menu dropdowns -->
         <div class="pc_menu">
@@ -55,8 +61,12 @@
             <a href="#"></a>
         </div>
         <div class="menu_icons_icon_mobile">
-            <div class="menu_icon_mobile" id="search_mobile"></div>
-            <div class="menu_icon_mobile" id="hamburger" onclick="hamburger_click()"></div>
+            <div class="menu_icon_mobile" id="search_mobile">
+                <i class="fa-regular fa-magnifying-glass"></i>
+            </div>
+            <div class="menu_icon_mobile" id="hamburger" onclick="hamburger_click()">
+                <i class="fa-solid fa-burger"></i>
+            </div>
         </div>
     </div>
 
@@ -64,10 +74,16 @@
     <div class="small_menu">
         <div class="small_menu_icons">
             <div class="small_menu_icons_group">
-                <div class="menu_icons_icon" id="language_mobile"></div>
-                <div class="menu_icons_icon" id="mode_mobile"></div>
+                <div class="menu_icons_icon" id="language_mobile">
+                    <i class="fa-regular fa-earth-americas"></i>
+                </div>
+                <div class="menu_icons_icon" id="mode_mobile">
+                    <i class="fa-solid fa-moon"></i>
+                </div>
             </div>
-            <div class="menu_icons_icon" id="closed" onclick="closed_click()"></div>
+            <div class="menu_icons_icon" id="closed" onclick="closed_click()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
         </div>
     <!-- this is 360 px mobile menu dropdowns -->
         <div class="small_menu_dropdowns">
@@ -169,6 +185,7 @@
     <!-- this is top button  -->
     <div class="bottom">
         <div class="top_btn" onclick="topFunction()" title="go to top">
+            <i class="fa-solid fa-arrow-up"></i>
         </div>
     </div>
 
@@ -261,7 +278,9 @@
             <!-- this is footer_search -->
             <div class="footer_search" onclick="plusIcon()">
                 <strong>관련사이트</strong>
-                <div class="plus_icon"></div>
+                <div class="plus_icon">
+                    <!-- <i class="fa-solid fa-plus"></i> -->
+                </div>
                 <ul class="search_lists">
                     <li>
                         <a href="#">카카오 AI</a>
