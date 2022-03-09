@@ -8,6 +8,8 @@ const hamburger = document.querySelector('#hamburger');
 let small_menu = document.querySelector('.small_menu');
 let closed = document.querySelector("#closed");
 const logo = document.querySelector('.logo');
+const logo_mobile = document.querySelector('#logo_mobile');
+
 
 // window.onresize = function(){ document.location.reload(); };
 
@@ -48,6 +50,7 @@ darkMode.addEventListener("click", function() {
     // i don't know how to deal w white icon...
     // darkMode.style.backgroundImage = "url('./sun-line.svg')";
     logo.classList.toggle("logo_white");
+    logo_mobile.classList.toggle("logo_white");
 })
 // this is dark mode_mobile
 darkMode_mobile.addEventListener("click", function() {
@@ -55,6 +58,7 @@ darkMode_mobile.addEventListener("click", function() {
     // i don't know how to deal w white icon...
     // darkMode_mobile.style.backgroundImage = "url('./sun-solid.svg')";
     logo.classList.toggle("logo_white");
+    logo_mobile.classList.toggle("logo_white");
 })
 // this is pc_menu_list
 function pc_menu_click_1() {
